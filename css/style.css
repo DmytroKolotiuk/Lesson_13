@@ -1,0 +1,314 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+
+[class*="container"] {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.items {
+	padding: 50px;
+	background-color: antiquewhite;
+	width: 800px;
+	height: 500px;
+	position: relative;
+}
+
+.items__title h2 {
+	font-size: 30px;
+	font-weight: 700;
+	color: firebrick;
+	position: relative;
+	left: 200px;
+}
+
+.items__item-one {
+	background-color: red;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.items__item-two {
+	background-color: yellow;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.items__item-three {
+	background-color: green;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.items__item-four {
+	background-color: hsl(356, 82%, 41%);
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in;
+}
+
+.items__item-one:hover {
+	background-color: aquamarine;
+	transition-duration: 0.5s;
+}
+
+.items__item-two:hover {
+	border-radius: 40%;
+	position: relative;
+	left: 20px;
+	transition-property: all;
+	transition-duration: 0.5s;
+}
+
+.items__item-three:hover {
+	background-color: aliceblue;
+	transition-delay: 1s;
+	transition-duration: 0.5s;
+}
+
+.items__item-four:hover {
+	background-color: rgb(138, 26, 26);
+}
+
+p {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: darkblue;
+	font-size: 15px;
+	font-weight: 500;
+	position: relative;
+	bottom: 60px;
+	left: 100px;
+}
+
+
+.animation {
+	width: 800px;
+	height: 900px;
+	background-color: aqua;
+}
+
+.animation__title {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: black;
+	font-size: 30px;
+	position: relative;
+	left: 200px;
+	padding: 30px;
+}
+
+.animation__one {
+	background-color: blueviolet;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 60px;
+	position: relative;
+	top: 0px;
+	right: 200px;
+	animation-name: animation__one;
+	animation-duration: 1s;
+}
+
+@keyframes animation__one {
+	0% {
+		right: 200px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+.animation__two {
+	background-color: #9f98a5;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 0px;
+	right: 200px;
+	margin-bottom: 60px;
+	animation-name: animation__two;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+
+@keyframes animation__two {
+	0% {
+		right: 200px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+.animation__three {
+	background-color: hsl(323, 81%, 47%);
+	width: 100px;
+	height: 100px;
+	margin-bottom: 60px;
+	position: relative;
+	top: 0px;
+	right: 200px;
+	animation-name: animation__three;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 5;
+}
+
+@keyframes animation__three {
+	0% {
+		right: 200px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+.animation__four {
+	background-color: hsl(138, 38%, 48%);
+	width: 100px;
+	height: 100px;
+	margin-bottom: 60px;
+	position: relative;
+	top: 0px;
+	right: 200px;
+	animation-name: animation__four;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes animation__four {
+	0% {
+		right: 200px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+.animation__five {
+	background-color: hwb(51 11% 11%);
+	width: 100px;
+	height: 100px;
+	margin-bottom: 60px;
+	position: relative;
+	top: 0px;
+	right: 200px;
+	animation-name: animation__five;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+.animation__five:active {
+	animation-play-state: paused;
+}
+
+@keyframes animation__five {
+	0% {
+		right: 200px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+.page__container {
+	max-width: 1300px;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.page__for-laughs {
+	background-image: url(../img/stage.jpg);
+	height: 700px;
+}
+
+
+.for-laughs__image {
+	position: relative;
+	left: 30px;
+	animation-name: for-laughs__image;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+.for-laughs__evgen {
+	position: relative;
+	top: 300px;
+	left: 200px;
+	height: 400px;
+	transform: rotate(5deg);
+}
+
+.for-laughs__balet {
+	position: relative;
+	top: 350px;
+}
+
+
+@keyframes for-laughs__image {
+	0% {
+		left: 30px;
+	}
+
+	100% {
+		left: 150px;
+	}
+}
+
+.for-laughs__inst-one {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	bottom: 20px;
+}
+
+.for-laughs__instr-two {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 680px;
+	bottom: 100px;
+}
+
+.for-laughs__three {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 370px;
+	right: 750px;
+	transform: rotate(-69deg);
+}
+
+.for-laughs__text {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	color: #711098;
+	font-weight: 700;
+	position: absolute;
+	bottom: 70px;
+	left: 240px;
+}
